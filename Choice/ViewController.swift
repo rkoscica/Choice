@@ -10,30 +10,30 @@ import UIKit
 
 
 class ViewController: UIViewController {
- /*
+ 
     @IBOutlet weak var textArea: UITextView!
 
-    @IBOutlet weak var optA: UITextView!
-    @IBOutlet weak var optB: UITextView!
-    @IBOutlet weak var optC: UITextView!
-    @IBOutlet weak var optD: UITextView!
-    */
+    @IBOutlet weak var optA: UILabel!
+    @IBOutlet weak var optB: UILabel!
+    @IBOutlet weak var optC: UILabel!
+    @IBOutlet weak var optD: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-  /*
+  
         textArea.text = consequence("Story", choice: "start")
         optA.text = consequence("Option", choice: "A")
         optB.text = consequence("Option", choice: "B")
         optC.text = consequence("Option", choice: "C")
         optD.text = consequence("Option", choice: "D")
-*/
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-  /*
+  
     @IBAction func bOnePressed () {
         textArea.text = consequence("Story", choice: "A")
     }
@@ -53,6 +53,6 @@ class ViewController: UIViewController {
         optC.text = consequence("Option", choice: "C")
         optD.text = consequence("Option", choice: "D")
     }
-*/
+
 }
 

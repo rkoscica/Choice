@@ -35,11 +35,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZhS-bh-SVR">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="Settings" id="JAD-Kx-Eib">
-                                        <connections>
-                                            <segue destination="Zyy-rS-FP4" kind="show" id="inM-wG-Asq"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Settings" id="JAD-Kx-Eib"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="eLV-lK-p4Y"/>
                                 </items>
                             </toolbar>
@@ -49,28 +45,28 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as8-xw-0As">
-                                <rect key="frame" x="15" y="386" width="30" height="30"/>
+                                <rect key="frame" x="15" y="366" width="30" height="30"/>
                                 <state key="normal" title="A)"/>
                                 <connections>
                                     <action selector="bOnePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="gNo-1V-dqi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74l-7W-v1K">
-                                <rect key="frame" x="15" y="432" width="30" height="30"/>
+                                <rect key="frame" x="15" y="424" width="30" height="30"/>
                                 <state key="normal" title="C)"/>
                                 <connections>
                                     <action selector="bThreePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="5st-Hu-b73"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-xb-Dui">
-                                <rect key="frame" x="15" y="456" width="30" height="30"/>
+                                <rect key="frame" x="15" y="452" width="30" height="30"/>
                                 <state key="normal" title="D)"/>
                                 <connections>
                                     <action selector="bFourPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Em-6x-eOu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihb-Xg-uEW">
-                                <rect key="frame" x="15" y="410" width="30" height="30"/>
+                                <rect key="frame" x="15" y="395" width="30" height="30"/>
                                 <state key="normal" title="B)"/>
                                 <connections>
                                     <action selector="bTwoPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLe-d4-c1b"/>
@@ -83,69 +79,46 @@
                                     <action selector="nextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjq-sa-Rqf"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Option 1" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sT0-Ff-vJN">
-                                <rect key="frame" x="39" y="385" width="261" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Option 2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o2I-eK-ghs">
-                                <rect key="frame" x="39" y="408" width="261" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Option 3" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ICn-Wq-c42">
-                                <rect key="frame" x="39" y="430" width="261" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Option 4" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MQ4-Nr-Fpn">
-                                <rect key="frame" x="39" y="453" width="261" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOk-GF-sYY">
+                                <rect key="frame" x="53" y="399" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-dU-b2H">
+                                <rect key="frame" x="53" y="428" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHf-H5-FDh">
+                                <rect key="frame" x="53" y="456" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPk-yI-0nf">
+                                <rect key="frame" x="53" y="370" width="247" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Essence of the Void" id="2Mt-JY-Prh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="optA" destination="sT0-Ff-vJN" id="AYc-hj-bDf"/>
-                        <outlet property="optB" destination="o2I-eK-ghs" id="NOh-nP-reW"/>
-                        <outlet property="optC" destination="ICn-Wq-c42" id="NAM-Yh-iUn"/>
-                        <outlet property="optD" destination="MQ4-Nr-Fpn" id="B7a-vH-S7j"/>
+                        <outlet property="optA" destination="dPk-yI-0nf" id="fdS-o7-PkX"/>
+                        <outlet property="optB" destination="fOk-GF-sYY" id="pIi-ng-KyP"/>
+                        <outlet property="optC" destination="dsw-dU-b2H" id="i81-7G-dsg"/>
+                        <outlet property="optD" destination="jHf-H5-FDh" id="sea-8M-lcO"/>
                         <outlet property="textArea" destination="V0q-MO-FoC" id="BIv-HR-H6M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="440" y="389"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="U3e-v3-9wc">
-            <objects>
-                <viewController id="Zyy-rS-FP4" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="u4a-X8-JNR"/>
-                        <viewControllerLayoutGuide type="bottom" id="V5j-IA-qDQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oQ8-HI-Zh2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIW-CC-VC1">
-                                <rect key="frame" x="118" y="137" width="84" height="30"/>
-                                <state key="normal" title="Reset Game"/>
-                                <connections>
-                                    <action selector="resetPressed" destination="Qs9-Uh-ZAn" eventType="touchUpInside" id="I5X-Ww-fOY"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qs9-Uh-ZAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="925" y="405"/>
         </scene>
     </scenes>
 </document>

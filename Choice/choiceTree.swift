@@ -5,16 +5,12 @@
 //  Created by Rosalyn Koscica on 11/4/15.
 //  Copyright © 2015 Rosalyn Koscica. All rights reserved.
 //
-/*
+
 import Foundation
 import UIKit
 
 var cycle: Int = 0
-var storyArray = ["You find yourself in a forest with no memory of how you came to be there. To your right, there is a cliff. To your left, there is a helicopter. Behind you, there is a hungry mountain lion. An awful smell emanates from the path in front of you. The sun is setting and you must find shelter. What do you do?",
-    "You died.", "You manage to survive.", "You escape with a large wound.", "You find yourself stuck in a swamp.",
-    "Jump off the cliff.", "Try to fly the helicopter.", "Try to run past the lion.", "Hold your nose and walk forward.",
-    
-    "You are in a deserted shopping mall. The doors have locked, the employees have gone home, and the friends who came with you are nowhere to be seen."]
+var storyArray = ["You find yourself in a forest with no memory of how you came to be there. To your right, there is a cliff. To your left, there is a helicopter. Behind you, there is a hungry mountain lion. An awful smell emanates from the path in front of you. The sun is setting and you must find shelter. What do you do?", "You died.", "You manage to survive.", "You escape with a large wound.", "You find yourself stuck in a swamp.", "Jump off the cliff.", "Try to fly the helicopter.", "Try to run past the lion.", "Hold your nose and walk forward.", "You are in a deserted shopping mall. The doors have locked, the employees have gone home, and the friends who came with you are nowhere to be seen."]
 
 func consequence (let mode: String, let choice: String) -> String {
         var status = ""
@@ -43,7 +39,7 @@ func consequence (let mode: String, let choice: String) -> String {
             status = storyArray[cycle*9]
         }
     }
-    if cycle*9 + 9 < storyArray.count{
+    if cycle*9 + 18 < storyArray.count{
         cycle++
     } else {
         cycle = 0
@@ -51,4 +47,3 @@ func consequence (let mode: String, let choice: String) -> String {
     return status
 }
 
-*/
