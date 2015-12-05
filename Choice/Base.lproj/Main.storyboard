@@ -43,46 +43,76 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="eLV-lK-p4Y"/>
                                 </items>
                             </toolbar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V0q-MO-FoC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Story here! :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V0q-MO-FoC">
                                 <rect key="frame" x="8" y="64" width="304" height="276"/>
-                                <string key="text">You find yourself in a forest with no memory of how you came to be there. To your right, there is a cliff. To your left, there is a helicopter. Behind you, there is a hungry mountain lion. An awful smell emanates from the path in front of you.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as8-xw-0As">
-                                <rect key="frame" x="16" y="386" width="284" height="30"/>
-                                <state key="normal" title="Jump off the cliff."/>
+                                <rect key="frame" x="15" y="386" width="30" height="30"/>
+                                <state key="normal" title="A)"/>
                                 <connections>
                                     <action selector="bOnePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="gNo-1V-dqi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74l-7W-v1K">
-                                <rect key="frame" x="16" y="432" width="284" height="30"/>
-                                <state key="normal" title="Run past the mountain lion."/>
+                                <rect key="frame" x="15" y="432" width="30" height="30"/>
+                                <state key="normal" title="C)"/>
                                 <connections>
                                     <action selector="bThreePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="5st-Hu-b73"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-xb-Dui">
-                                <rect key="frame" x="16" y="456" width="284" height="30"/>
-                                <state key="normal" title="Walk forward."/>
+                                <rect key="frame" x="15" y="456" width="30" height="30"/>
+                                <state key="normal" title="D)"/>
                                 <connections>
                                     <action selector="bFourPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Em-6x-eOu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihb-Xg-uEW">
-                                <rect key="frame" x="16" y="410" width="284" height="30"/>
-                                <state key="normal" title="Try to fly the helicopter."/>
+                                <rect key="frame" x="15" y="410" width="30" height="30"/>
+                                <state key="normal" title="B)"/>
                                 <connections>
                                     <action selector="bTwoPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLe-d4-c1b"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOC-U6-eva">
+                                <rect key="frame" x="168" y="485" width="144" height="30"/>
+                                <state key="normal" title="Next Scenario --&gt;"/>
+                                <connections>
+                                    <action selector="nextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fjq-sa-Rqf"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Option 1" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sT0-Ff-vJN">
+                                <rect key="frame" x="39" y="385" width="261" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Option 2" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o2I-eK-ghs">
+                                <rect key="frame" x="39" y="408" width="261" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Option 3" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ICn-Wq-c42">
+                                <rect key="frame" x="39" y="430" width="261" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Option 4" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MQ4-Nr-Fpn">
+                                <rect key="frame" x="39" y="453" width="261" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Essence of the Void" id="2Mt-JY-Prh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="optA" destination="sT0-Ff-vJN" id="AYc-hj-bDf"/>
+                        <outlet property="optB" destination="o2I-eK-ghs" id="NOh-nP-reW"/>
+                        <outlet property="optC" destination="ICn-Wq-c42" id="NAM-Yh-iUn"/>
+                        <outlet property="optD" destination="MQ4-Nr-Fpn" id="B7a-vH-S7j"/>
                         <outlet property="textArea" destination="V0q-MO-FoC" id="BIv-HR-H6M"/>
                     </connections>
                 </viewController>
@@ -103,10 +133,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIW-CC-VC1">
-                                <rect key="frame" x="118" y="131" width="84" height="30"/>
+                                <rect key="frame" x="118" y="137" width="84" height="30"/>
                                 <state key="normal" title="Reset Game"/>
                                 <connections>
-                                    <action selector="resetPressed" destination="Qs9-Uh-ZAn" eventType="touchUpInside" id="1db-wL-r7h"/>
+                                    <action selector="resetPressed" destination="Qs9-Uh-ZAn" eventType="touchUpInside" id="I5X-Ww-fOY"/>
                                 </connections>
                             </button>
                         </subviews>

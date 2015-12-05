@@ -5,22 +5,50 @@
 //  Created by Rosalyn Koscica on 11/4/15.
 //  Copyright © 2015 Rosalyn Koscica. All rights reserved.
 //
-
+/*
 import Foundation
 import UIKit
 
-func consequence (let choice: String) -> String {
+var cycle: Int = 0
+var storyArray = ["You find yourself in a forest with no memory of how you came to be there. To your right, there is a cliff. To your left, there is a helicopter. Behind you, there is a hungry mountain lion. An awful smell emanates from the path in front of you. The sun is setting and you must find shelter. What do you do?",
+    "You died.", "You manage to survive.", "You escape with a large wound.", "You find yourself stuck in a swamp.",
+    "Jump off the cliff.", "Try to fly the helicopter.", "Try to run past the lion.", "Hold your nose and walk forward.",
+    
+    "You are in a deserted shopping mall. The doors have locked, the employees have gone home, and the friends who came with you are nowhere to be seen."]
+
+func consequence (let mode: String, let choice: String) -> String {
         var status = ""
-    if choice == "A" {
-        status = "You died."
-    } else if choice == "B" {
-        status = "You manage to survive."
-    } else if choice == "C" {
-        status = "You escape with a large wound."
-    } else if choice == "D" {
-        status = "You find yourself stuck in a swamp."
+    if mode == "Story" {
+        if choice == "A" {
+            status = storyArray[cycle*9 + 1]
+        } else if choice == "B" {
+            status = storyArray[cycle*9 + 2]
+        } else if choice == "C" {
+            status = storyArray[cycle*9 + 3]
+        } else if choice == "D" {
+            status = storyArray[cycle*9 + 4]
+        } else if choice == "next" || choice == "start" {
+            status = storyArray[cycle*9]
+        }
+    } else if mode == "Option" {
+        if choice == "A" {
+            status = storyArray[cycle*9 + 5]
+        } else if choice == "B" {
+            status = storyArray[cycle*9 + 6]
+        } else if choice == "C" {
+            status = storyArray[cycle*9 + 7]
+        } else if choice == "D" {
+            status = storyArray[cycle*9 + 8]
+        } else if choice == "next" || choice == "start" {
+            status = storyArray[cycle*9]
+        }
+    }
+    if cycle*9 + 9 < storyArray.count{
+        cycle++
     } else {
-        status = "You find yourself in a forest with no memory of how you came to be there. To your right, there is a cliff. To your left, there is a helicopter. Behind you, there is a hungry mountain lion. An awful smell emanates from the path in front of you. The sun is setting and you must find shelter. What do you do?"
+        cycle = 0
     }
     return status
 }
+
+*/
