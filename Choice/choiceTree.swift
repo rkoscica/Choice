@@ -19,6 +19,13 @@ func consequence (let mode: String, let choice: String) -> String {
     if mode == "Story" {
         if choice == "start" {
             status = storyArray[0]
+        } else if choice == "next" {
+            if cycle*9 + 17 < storyArray.count{
+                cycle++
+            } else {
+                cycle = 0
+            }
+            status = storyArray[cycle*9]
         } else if choice == "A" {
             status = storyArray[cycle*9 + 5]
         } else if choice == "B" {
@@ -27,13 +34,6 @@ func consequence (let mode: String, let choice: String) -> String {
             status = storyArray[cycle*9 + 7]
         } else if choice == "D" {
             status = storyArray[cycle*9 + 8]
-        } else if choice == "next" {
-            status = storyArray[cycle*9]
-            if cycle*9 + 17 < storyArray.count{
-                cycle++
-            } else {
-                cycle = 0
-            }
         }
     } else if mode == "Option" {
         if choice == "A" {

@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
   
         textArea.text = consequence("Story", choice: "start")
         optA.text = consequence("Option", choice: "A")
